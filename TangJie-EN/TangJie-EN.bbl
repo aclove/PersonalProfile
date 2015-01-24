@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{tang2013Efficient}
+\textbf{\underline{Jie Tang}}, Zhonghua Wen, and Haiping Huang.
+\newblock An efficient algorithm for observation information reduction in
+  nondeterministic planning.
+\newblock {\em Computer Engineering}, 39(12):162--166, 2013.
+
+\bibitem{tang2014solving}
+\textbf{\underline{Jie Tang}}, Zhonghua Wen, and Quan Wang.
+\newblock Solving strong cyclic planning in nondeterministic reversible
+  planning domain.
+\newblock {\em Journal of Computer Research and Development}, 50(9):1970--1980,
+  2013.
+
+\end{thebibliography}

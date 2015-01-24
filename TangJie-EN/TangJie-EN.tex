@@ -1,0 +1,122 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Jie} % Your first name
+\familyname{Tang} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{College of Information Engineering, Xiangtan University}{Yuhu, Xiangtan, Hunan, China 411105}
+\mobile{(0086) 13636550479}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{xtu.ac.love@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[40pt][0.4pt]{pictures/jietang} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012--Present}{Master's degree in Computer Science and Technology}{College of Information Engineering, Xiangtan University}{}{\textit{GPA -- 3.0/4.0}}{}%First Class Honours}  % Arguments not required can be left empty
+\cventry{2008--2012}{Bachelor's degree in Computer Science and Technology}{College of Information Engineering, Xiangtan University}{}{\textit{GPA -- 3.2/4.0}}{}%Specialized in Commerce}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2012, 2013}{National scholarship and merit student for graduate students}
+\cvitem{2011}{The ACM-ICPC Asia Regional Beijing and Dalian Sites, \textbf{Silver Medal}}
+\cvitem{2011}{The Sixth Hunan Collegiate Programming contest, \textbf{Champion}}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Internship}
+
+% \subsection{}
+\cventry{JUL 2014 - DEC 2014 }{Software Developer}{Jiang you Information technology co. ltd}{Shanghai}{}{
+	% \newline{}%\newline{}
+	Details:
+	\begin{itemize}
+	\item Learning the mainstream game engine(AS, Cocos2dx, U3D) and server-side programming(Unix network programming, mysql).
+	\item Using the three game engines to make a little game, respectively. Finally, three-man team makes an online game by selecting arbitary game engine in a month.
+	\item maintaining the  micro-client, battle logic and game editors that include action editor, effects editor and map editor for ACT group.
+	% \item Writed the documentation
+	\end{itemize}
+}
+
+% \subsection{}
+\cventry{Summer 2012}{Software Developer}{Eryiju Inc}{Beijing}{\textit{Project Name}: \textbf{GPU offline render}}{
+	% \newline{}
+	Details:
+	\begin{itemize}
+	\item Studying the ray tracing and rendering algorithms based on the related literature
+	\item Learning and analyzing the source code of Yafaray
+	\item Coding in CUDA C with Optix engine
+	\end{itemize}
+}
+
+%------------------------------------------------
+
+% \cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+% \subsection{Miscellaneous}
+
+% \cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Development Skills}
+
+\cvdoubleitem{Languages}{C/C++, Shell, Python, Java, AS}{Tools}{Git, SVN}
+\cvitem{Knowledge}{Linux, database, data structure and algorithms, etc}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
